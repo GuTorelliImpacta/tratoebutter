@@ -6,6 +6,8 @@ Site estático (Next.js 15, TypeScript, Tailwind) da hamburgueria Trato & Butter
 - Conteúdo editável: `src/content/site.ts` (endereço, horários, WhatsApp, links, FAQ)
 - Cardápio com preços: preencher `categories` em `src/app/cardapio/page.tsx` (oculto enquanto vazio)
 
+**Link público (preview):** https://tratoebutter-git-feat-site-trato-e-butter-torelli-s-team.vercel.app
+
 ## Rodar
 ```bash
 npm install
