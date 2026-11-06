@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #000; --paper: #F4EEE3; }
+
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: #111; font-family: var(--font-sans), system-ui, sans-serif; line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-slab), Georgia, serif; line-height: 1.05; }
+.t-hero { font-size: clamp(2.6rem, 9vw, 6rem); font-weight: 800; letter-spacing: -0.02em; }
+.t-h2 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 800; letter-spacing: -0.01em; }
+.ticket { border: 2px dashed currentColor; }
+
+@keyframes melt { 0%,100% { transform: translateY(0) scaleY(1); } 50% { transform: translateY(4px) scaleY(1.12); } }
+.drop-anim { animation: melt 3s ease-in-out infinite; transform-origin: top; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
